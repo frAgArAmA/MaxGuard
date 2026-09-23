@@ -19,8 +19,7 @@ PrivilegesRequired=admin
 UninstallDisplayIcon={app}\{#AppExeName}
 
 [Files]
-Source: "..\dist\MaxGuard\*"; DestDir: "{app}"; Flags: recursesubdirs createallsubdirs ignoreversion
-
+Source: "..\dist\MaxGuard.exe"; DestDir: "{app}"; Flags: ignoreversion
 [Icons]
 Name: "{group}\MaxGuard"; Filename: "{app}\{#AppExeName}"
 Name: "{autodesktop}\MaxGuard"; Filename: "{app}\{#AppExeName}"
