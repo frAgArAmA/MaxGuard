@@ -1,24 +1,28 @@
-# MaxGuard Website 1.0
+# MaxGuard 1.0
 
-Static landing page for MaxGuard 1.0.
+A defensive, user-mode antivirus-like scanner built with Python and Tkinter.
 
-## Files
-- `site/index.html` — main page
-- `site/style.css` — dark MaxGuard UI
-- `site/script.js` — EN/UK/ES language switcher
-- `site/downloads/` — place `MaxGuard-1.0-Setup.exe` here before publishing
+Features:
+- Dashboard
+- Quick / Full / Custom Scan
+- SHA-256 signatures
+- Trusted hashes
+- Safe heuristic analysis
+- Magic-byte and extension checks
+- Entropy analysis
+- PE/script/archive inspection
+- Risk score and evidence
+- Threat Center
+- Quarantine / restore / delete
+- Scan history
+- Activity log
+- Settings
+- English / Ukrainian / Spanish
+- Optional user-mode real-time folder monitoring
 
-## Local test
-Open `site/index.html` in a browser.
+This is not a kernel-level replacement for Microsoft Defender or a commercial antivirus.
+It does not execute scanned files and does not use stealth, persistence, credential theft,
+process injection, or other offensive behavior.
 
-For a local server:
-`python -m http.server 8080 --directory site`
-
-Then open:
-`http://localhost:8080`
-
-## Production
-Replace the placeholder installer with the real signed installer:
-`site/downloads/MaxGuard-1.0-Setup.exe`
-
-For a real public release, publish the installer over HTTPS and provide its SHA-256 hash.
+Run:
+    python main.py

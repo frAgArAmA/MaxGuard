@@ -1,0 +1,10 @@
+{
+  "language": null,
+  "heuristics": true,
+  "scan_archives": true,
+  "realtime": false,
+  "realtime_paths": [],
+  "excluded_paths": [],
+  "auto_quarantine": false,
+  "sample_size_mb": 8
+}
