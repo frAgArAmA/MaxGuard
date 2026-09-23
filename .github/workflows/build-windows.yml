@@ -34,17 +34,13 @@ jobs:
         run: |
           & "C:\Program Files (x86)\Inno Setup 6\ISCC.exe" "installer\MaxGuard.iss"
 
-                            - name: Calculate SHA-256
-                                shell: powershell
-                                    run: |
-                                       Get-ChildItem -Recurse -File |
-                                           Where-Object { $_.Name -ne "SHA256SUMS.txt" } |
-                                               Get-FileHash -Algorithm SHA256 |
-                                            Select-Object Path, Hash |
-                                                 Out-File SHA256SUMS.txt
-                                   Get-FileHash -Algorithm SHA256 |
-                                   Select-Object Path, Hash |
-                              Out-File SHA256SUMS.txt Out-File SHA256SUMS.txt
+      - name: Calculate SHA-256
+        shell: powershell
+        run: |
+          Get-ChildItem -Path "dist", "installer\output" -Recurse -File |
+            Get-FileHash -Algorithm SHA256 |
+            Select-Object Path, Hash |
+            Out-File "SHA256SUMS.txt"
 
       - name: Upload EXE
         uses: actions/upload-artifact@v4
