@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="MaxGuard 1.0 — local Windows antivirus with scanning, threat detection and quarantine.">
+  <title>MaxGuard — Windows Antivirus</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="nav">
+    <a class="brand" href="#top" aria-label="MaxGuard home">
+      <span class="shield">◆</span>
+      <span>MAX<span>GUARD</span></span>
+    </a>
+    <nav>
+      <a href="#features">Features</a>
+      <a href="#download">Download</a>
+      <a href="#about">About</a>
+    </nav>
+    <select id="lang" aria-label="Language">
+      <option value="en">English</option>
+      <option value="uk">Українська</option>
+      <option value="es">Español</option>
+    </select>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="glow"></div>
+      <div class="hero-copy">
+        <div class="badge" data-i18n="badge">MAXGUARD 1.0 • WINDOWS</div>
+        <h1 data-i18n="heroTitle">Your files.<br><em>Your protection.</em></h1>
+        <p data-i18n="heroText">Scan files, detect suspicious activity, review threats and keep dangerous files isolated with MaxGuard.</p>
+        <div class="actions">
+          <a class="btn primary" href="#download" data-i18n="downloadBtn">Download MaxGuard</a>
+          <a class="btn secondary" href="#features" data-i18n="learnBtn">Explore features</a>
+        </div>
+        <div class="meta">
+          <span>✓ Windows</span>
+          <span>✓ Version 1.0</span>
+          <span>✓ English / Українська / Español</span>
+        </div>
+      </div>
+      <div class="hero-card">
+        <div class="card-top"><span class="dot"></span><span class="status" data-i18n="status">Protection dashboard</span><span>•••</span></div>
+        <div class="ring"><span>100%</span><small data-i18n="ready">READY</small></div>
+        <div class="scan-line"><span data-i18n="engine">Detection Engine</span><strong data-i18n="active">ACTIVE</strong></div>
+        <div class="scan-line"><span data-i18n="quarantine">Quarantine</span><strong>0</strong></div>
+        <div class="scan-line"><span data-i18n="history">Scan History</span><strong>READY</strong></div>
+      </div>
+    </section>
+
+    <section id="features" class="section">
+      <div class="section-head">
+        <div class="eyebrow" data-i18n="featuresEyebrow">FEATURES</div>
+        <h2 data-i18n="featuresTitle">Everything you need<br>to inspect your PC.</h2>
+      </div>
+      <div class="grid">
+        <article><div class="icon">⌕</div><h3 data-i18n="f1t">Quick Scan</h3><p data-i18n="f1p">Quickly inspect common user locations for suspicious files.</p></article>
+        <article><div class="icon">▦</div><h3 data-i18n="f2t">Full Scan</h3><p data-i18n="f2p">Scan folders recursively and analyze files through the detection engine.</p></article>
+        <article><div class="icon">⚡</div><h3 data-i18n="f3t">Real-Time Monitor</h3><p data-i18n="f3p">Monitor configured folders for new or changed files using a safe user-mode watcher.</p></article>
+        <article><div class="icon">◈</div><h3 data-i18n="f4t">Threat Center</h3><p data-i18n="f4p">Review detections, evidence, risk levels and confidence in one place.</p></article>
+        <article><div class="icon">▣</div><h3 data-i18n="f5t">Quarantine</h3><p data-i18n="f5p">Keep confirmed threats isolated and restore or permanently delete them when needed.</p></article>
+        <article><div class="icon">◎</div><h3 data-i18n="f6t">Local Detection</h3><p data-i18n="f6p">Analyze hashes, signatures, file types, entropy and other local signals without uploading files.</p></article>
+      </div>
+    </section>
+
+    <section id="download" class="download">
+      <div>
+        <div class="eyebrow" data-i18n="downloadEyebrow">DOWNLOAD</div>
+        <h2 data-i18n="downloadTitle">MaxGuard 1.0 for Windows</h2>
+        <p data-i18n="downloadText">Install MaxGuard from a single Windows installer. Replace the placeholder installer link below with your published setup file when you deploy the website.</p>
+      </div>
+      <div class="download-box">
+        <div class="version">MAXGUARD <b>1.0</b></div>
+        <div class="file">MaxGuard-1.0-Setup.exe</div>
+        <a class="btn primary wide" href="downloads/MaxGuard-1.0-Setup.exe" data-i18n="downloadFile">Download installer</a>
+        <p class="small" data-i18n="checksum">For production, publish the installer hash and a digitally signed installer.</p>
+      </div>
+    </section>
+
+    <section id="about" class="section about">
+      <div class="section-head">
+        <div class="eyebrow" data-i18n="aboutEyebrow">ABOUT MAXGUARD</div>
+        <h2 data-i18n="aboutTitle">Built as a local Windows security tool.</h2>
+        <p data-i18n="aboutText">MaxGuard is a user-mode antivirus application with scanning, local detection, threat management, quarantine, history and configurable monitoring. It is designed to grow through future signature and application updates.</p>
+      </div>
+      <div class="notice"><strong data-i18n="noticeTitle">Security note</strong><span data-i18n="noticeText">MaxGuard 1.0 is not a replacement for kernel-level security products such as Microsoft Defender. The website describes the features included in this project and does not claim capabilities that are not implemented.</span></div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="brand smallbrand"><span class="shield">◆</span><span>MAX<span>GUARD</span></span></div>
+    <p>© 2026 MaxGuard. Windows security software.</p>
+    <div><a href="#download">Download</a> · <a href="#features">Features</a></div>
+  </footer>
+
+<script src="script.js"></script>
+</body>
+</html>
